@@ -1,6 +1,5 @@
 #!/usr/bin/env node
 
-
 import { promises as fs } from 'fs';
 import { homedir } from 'os';
 import { join as joinPath } from 'path';
@@ -39,8 +38,6 @@ async function cleanDirDeep(pathname: string, deep = 0) {
       continue;
     }
 
-
-
     const stat = await fs.stat(itemPathName);
 
     if (stat.isDirectory()) {
@@ -62,21 +59,13 @@ const homeDirPath = homedir();
 
 console.log('delete cache items...');
 
-
-
-
-
-
-
-
 del(
   [
     joinPath(homeDirPath, '.npm/_cacache'),
     joinPath(homeDirPath, '.gradle/caches'),
     joinPath(homeDirPath, '.pub-cache'),
-
   ],
-  { force: true,  }
+  { force: true }
 ).then(() => {
   cleanDirDeep(homeDirPath);
 });

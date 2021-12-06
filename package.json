@@ -1,13 +1,13 @@
 {
   "name": "ihatetomato",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "enter your description",
   "main": "build/index.js",
   "typings": "build/index.d.ts",
   "repository": "https://github.com/hsh2001/ihatetomato",
   "license": "MIT",
   "keywords": [],
-  "bin": "node build/index.js",
+  "bin": "build/index.js",
   "scripts": {
     "prestart": "npm run build",
     "start": "node build/index.js",
