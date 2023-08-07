@@ -35,6 +35,6 @@
     "singleQuote": true
   },
   "dependencies": {
-    "del": "6.0.0"
+    "del": "6.1.1"
   }
 }
